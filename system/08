@@ -1,0 +1,3 @@
+Le fichier "authorized_keys" pour les ssh ce trouve sur le serveur, dans le répertoire personnel
+du compte utilisateur qui reçoi des connexions distante en "ssh" protégé avec une clé privé.
+L'emplacement du fichier est "~/.ssh/authorized_keys" ou l'adresse en entier "/home/[nom_utilisateur]/.ssh/authorized_keys".

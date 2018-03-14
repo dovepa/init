@@ -1,0 +1,6 @@
+Pour toute requête, on passe par une bibliothèque appelée ``resolver''.
+Il s'agit d'un ensemble de fonctions écrites en C.
+Cette bibliothèque est indépendante du serveur DNS.
+
+Le fichier de configuration du resolver s'appelle resolv.conf
+le path complet du fichier dans lequel est écrit l’adresse IP du serveur DNS est /etc/resolv.conf

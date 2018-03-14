@@ -1,0 +1,17 @@
+#!/bin/bash
+#	for add a crontab rule
+#	$ (crontab -l 2>/dev/null; echo "0 0 * * * /bin/bash /root/init/script/04") | crontab -
+#	or you can do :
+#						$ crontab -e
+#	and add with the txt editor :
+#						0 0 * * * /bin/bash /root/init/script/04
+
+if [ ! -f /etc/crontabmd5sum ]
+then
+	md5sum /etc/crontab | awk '{print $1}' > /etc/crontabmd5sum
+fi
+if [ $(cat /etc/crontabmd5sum ) != $(md5sum /etc/crontab | awk '{print $1}') ]
+then
+	echo "Hello, the crontab file has been modified" | mail -s "Crontab file edit" root@localhost.localdomain
+	md5sum /etc/crontab | awk '{print $1}' > /etc/crontabmd5sum
+fi

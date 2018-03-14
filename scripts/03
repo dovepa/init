@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ $# -ne 1 ]
+then
+	echo "Usage : sh 03 "path to file""
+	exit 0
+fi
+ls -lSh $1 | awk '{print $9 "	" $5}' | awk '{if (NR!=1) {print}}'

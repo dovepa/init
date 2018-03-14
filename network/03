@@ -1,0 +1,1 @@
+networksetup -listallhardwareports | grep -A3 Wi-Fi | awk 'FNR == 3 {print $3}'

@@ -1,0 +1,9 @@
+#!/bin/bash
+#	for add a crontab rule
+#	$ (crontab -l 2>/dev/null; echo "0 4 * * 1 /bin/bash /root/init/scripts/02") | crontab -
+#	or you can do :
+#						$ crontab -e
+#	and add with the txt editor :
+#						0 4 * * 1 /bin/bash /root/init/scripts/02
+apt-get -y update >> /var/log/update_script.log
+apt-get -y upgrade >> /var/log/update_script.log

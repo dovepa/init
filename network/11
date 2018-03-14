@@ -1,0 +1,4 @@
+le nom et l ip du materiael qui fait le lien est nat-1
+(Network address translation) son ip est 10.60.1.11
+elle fait le lien avec l exterieur car apres crtte machine 
+on sort de la plage des ip locales qui commance par 10. 

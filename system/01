@@ -1,0 +1,2 @@
+la version de debian ce trouve dans : /etc/debian_version
+Petit plus : une commande interessante pour afficher la version est  -> lsb_release -ds

@@ -1,0 +1,9 @@
+Cron est un programme permettant de planifier des taches régulières.
+elles sont réalisées automatiquement
+par le système plutôt que d’avoir à les lancer manuellement 
+en tant qu’utilisateur.
+
+Cron est un démon, il tourne donc en tâche de fond du système.
+Il peut donc être arrêté, démarré ou redémarrer avec la commande :
+
+service cron stop|start|restart
